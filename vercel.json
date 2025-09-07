@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/clk",     "destination": "https://tracking-app.sila-ai.com/clk" },
+    { "source": "/blocked", "destination": "https://tracking-app.sila-ai.com/blocked" },
+    { "source": "/traffic-check", "destination": "https://tracking-app.sila-ai.com/traffic-check" },
+    { "source": "/traffic", "destination": "https://tracking-app.sila-ai.com/traffic" },
+    { "source": "/botd",    "destination": "https://tracking-app.sila-ai.com/botd" },
+    { "source": "/convert",    "destination": "https://tracking-app.sila-ai.com/convert" },
+    { "source": "/(.*)",    "destination": "https://tracking-app.sila-ai.com/$1" }
+  ],
+  "headers": [
+    { "source": "/blocked", "headers": [{ "key": "Cache-Control", "value": "no-store" }] }
+  ]
+}
