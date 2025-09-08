@@ -1,11 +1,9 @@
 {
   "rewrites": [
-    { "source": "/clk",     "destination": "https://tracking-app.sila-ai.com/clk" },
-    { "source": "/traffic-check", "destination": "https://tracking-app.sila-ai.com/traffic-check" },
     { "source": "/traffic", "destination": "https://tracking-app.sila-ai.com/traffic" },
+    { "source": "/traffic-check", "destination": "https://tracking-app.sila-ai.com/traffic-check" },
     { "source": "/botd",    "destination": "https://tracking-app.sila-ai.com/botd" },
-    { "source": "/convert",    "destination": "https://tracking-app.sila-ai.com/convert" },
-    { "source": "/(.*)",    "destination": "https://tracking-app.sila-ai.com/$1" }
+    { "source": "/clk",     "destination": "https://tracking-app.sila-ai.com/clk" }
   ],
   "routes": [
     { "src": "^/blocked$", "dest": "/blocked.html" }
