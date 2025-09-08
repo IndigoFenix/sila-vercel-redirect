@@ -1,12 +1,11 @@
 {
+  "version": 2,
   "rewrites": [
+    { "source": "/blocked", "destination": "/blocked.html" },
     { "source": "/traffic", "destination": "https://tracking-app.sila-ai.com/traffic" },
     { "source": "/traffic-check", "destination": "https://tracking-app.sila-ai.com/traffic-check" },
     { "source": "/botd",    "destination": "https://tracking-app.sila-ai.com/botd" },
     { "source": "/clk",     "destination": "https://tracking-app.sila-ai.com/clk" }
-  ],
-  "routes": [
-    { "src": "^/blocked$", "dest": "/blocked.html" }
   ],
   "headers": [
     {
